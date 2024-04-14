@@ -44,14 +44,24 @@ def obnovlenia_en():
     return render_template('obnovlenia_en.html', title='Updates')
 
 
-@app.route('/history_first_1')
+@app.route('/game/rules')
 def mrorii_1():
     return render_template('mrorii_1.html', title="Мрорий")
 
 
-@app.route('/history_first_1_en')
+@app.route('/game_en/rules')
 def mrorii_1_en():
     return render_template('mrorii_1_en.html', title="Mrorii")
+
+
+@app.route('/game/rules/1')
+def hist_1():
+    return render_template('hist_1_1.html')
+
+
+@app.route('/game_en/rules/1')
+def hist_1_en():
+    return render_template('hist_1_1_en.html')
 
 
 if __name__ == '__main__':

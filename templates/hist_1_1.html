@@ -1,0 +1,32 @@
+{% extends "hist_1.html" %}
+{% block content %}
+<center><img src="/static/img/photo_5251501137985657188_y.jpg" width="200"></center>
+<h3>Вы входите в зал, где вас встречает Анна Павловна Шерер.<br>- Ну, князь, Генуя и Лукка — поместья фамилии Бонапарте.
+    Нет, я вам вперед говорю, если вы мне не скажете, что у нас
+    война, если вы еще позволите себе защищать все гадости, все ужасы этого Антихриста (право, я верю, что он
+    Антихрист), — я вас больше не знаю, вы уж не друг мой, вы уж не мой верный раб, как вы говорите.</h3>
+<!-- Кнопка-триггер модального окна -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Доп. информация
+</button>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Инофрмация</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        Анна Павловна Шерер - влиятельное лицо.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+<h5><a class="btn btn-danger">Мадам, подвинься!</a></h5>
+<h5><a class="btn btn-success">У нас война. Наполеон - капец силач.</a></h5>
+{% endblock %}
