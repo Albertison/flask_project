@@ -21,16 +21,16 @@
         </div>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <h5><a href="{{ url_for('mainium') }}" class="nav-link px-2 link-secondary">Домашняя</a></h5>
-            <h5><a href="{{ url_for('game') }}" class="nav-link px-2">Играть</a></h5>
-            <h5><a href="{{ url_for('about_us') }}" class="nav-link px-2">Про нас</a></h5>
-            <h5><a href="{{ url_for('obnovlenia') }}" class="nav-link px-2">Обновления</a></h5>
-            <h5><a href="{{ url_for('mainium_en') }}" class="btn btn-outline-secondary">EN</a></h5>
+            <h5><a href="{{ url_for('mainium_en') }}" class="nav-link px-2 link-secondary">Homelike</a></h5>
+            <h5><a href="{{ url_for('game_en') }}" class="nav-link px-2">Play</a></h5>
+            <h5><a href="{{ url_for('about_us_en') }}" class="nav-link px-2">About us</a></h5>
+            <h5><a href="{{ url_for('obnovlenia_en') }}" class="nav-link px-2">Updates</a></h5>
+            <h5><a href="{{ url_for('mainium') }}" class="btn btn-outline-secondary">RU</a></h5>
         </ul>
 
         <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2">Вход</button>
-            <a class="btn btn-info" role="button">Регистрация</a>
+            <button type="button" class="btn btn-outline-primary me-2">Sign in</button>
+            <a class="btn btn-info" role="button">Registration</a>
         </div>
     </header>
     {% block content %}{% endblock %}

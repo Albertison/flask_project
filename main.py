@@ -6,9 +6,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def mainium():
-    params = {}
-    params['title'] = 'Начало'
-    return render_template('first_page.html', **params)
+    return render_template('first_page.html', title='Начало')
+
+
+@app.route('/en')
+def mainium_en():
+    return render_template('first_page_en.html', title='Beginning')
 
 
 @app.route("/about_us")
@@ -16,9 +19,19 @@ def about_us():
     return render_template("about_us.html", title='Про нас')
 
 
+@app.route("/about_us_en")
+def about_us_en():
+    return render_template("about_us_en.html", title='About us')
+
+
 @app.route('/game')
 def game():
     return render_template("game.html", title="Начало игры")
+
+
+@app.route('/game_en')
+def game_en():
+    return render_template("game_en.html", title="Начало игры")
 
 
 @app.route('/obnovlenia')
@@ -26,9 +39,19 @@ def obnovlenia():
     return render_template('obnovlenia.html', title='Обновления')
 
 
+@app.route('/obnovlenia_en')
+def obnovlenia_en():
+    return render_template('obnovlenia_en.html', title='Updates')
+
+
 @app.route('/history_first_1')
 def mrorii_1():
     return render_template('mrorii_1.html', title="Мрорий")
+
+
+@app.route('/history_first_1_en')
+def mrorii_1_en():
+    return render_template('mrorii_1_en.html', title="Mrorii")
 
 
 if __name__ == '__main__':
