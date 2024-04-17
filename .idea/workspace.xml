@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5359031d-7fe2-4ec7-aa1c-0fbcc28828b3" name="Changes" comment="s" />
+    <list default="true" id="5359031d-7fe2-4ec7-aa1c-0fbcc28828b3" name="Changes" comment="d">
+      <change afterPath="$PROJECT_DIR$/static/img/friend.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/friend2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/friend3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/first_story_room_lier.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/first_story_room_truth.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/first_story_room_switchoff.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/first_story_room_switchoff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/first_story_room_switchon.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/first_story_room_switchon.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +57,7 @@
       <recent name="C:\Users\xaziv\OneDrive\Рабочий стол\pythonProject1\static\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xaziv\OneDrive\Рабочий стол\pythonProject1\static\img" />
       <recent name="C:\Users\xaziv\OneDrive\Рабочий стол\pythonProject1" />
     </key>
   </component>
@@ -199,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713364868213</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="d">
+      <option name="closed" value="true" />
+      <created>1713373045618</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713373045618</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -216,6 +235,7 @@
     <MESSAGE value="p" />
     <MESSAGE value="a" />
     <MESSAGE value="s" />
-    <option name="LAST_COMMIT_MESSAGE" value="s" />
+    <MESSAGE value="d" />
+    <option name="LAST_COMMIT_MESSAGE" value="d" />
   </component>
 </project>

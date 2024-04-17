@@ -151,5 +151,14 @@ def first_story_room_switchoff():
     return render_template('first_story_room_switchoff.html')
 
 
+@app.route('/game/first_story/room/first_story_room_truth')
+def first_story_room_truth():
+    return render_template('first_story_room_truth.html')
+
+
+@app.route('/game/first_story/room/first_story_room_lier')
+def first_story_room_lier():
+    return render_template('first_story_room_lier.html')
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')

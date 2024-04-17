@@ -1,4 +1,8 @@
 {% extends "hist_1.html" %}
 {% block content %}
-<h1>Вы не включили свет</h1>
+<center><img src="/static/img/friend2.jpg" width="350"></center>
+<h1>Вы не включили свет и сидите в полной темноте.<br>Однако к вам приходит ваш старый друг Линдов и включает свет.<br>-
+    Привет, Арнольд!<br>- Привет, Линдов!<br>- Как дела? Как универ?</h1>
+<center><a href="{{ url_for('first_story_room_truth') }}" class="btn btn-outline-success">Сказать правду</a></center>
+<center><a href="{{ url_for('first_story_room_lier') }}" class="btn btn-outline-danger">Солгать</a></center>
 {% endblock %}
