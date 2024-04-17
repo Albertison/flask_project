@@ -136,5 +136,10 @@ def dontunderstand_en():
     return render_template('dontunderstand_en.html')
 
 
+@app.route('/game/first_story')
+def first_story():
+    return render_template('first_story.html')
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
