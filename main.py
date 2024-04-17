@@ -116,5 +116,25 @@ def hist_1_en():
     return render_template('hist_1_1_en.html')
 
 
+@app.route('/game/rules/dontunderstand')
+def dontunderstand():
+    return render_template('dontunderstand.html')
+
+
+@app.route('/game/rules/understand')
+def understand():
+    return render_template('understand.html')
+
+
+@app.route('/game/rules/understand_en')
+def understand_en():
+    return render_template('understand_en.html')
+
+
+@app.route('/game/rules/dontunderstand_en')
+def dontunderstand_en():
+    return render_template('dontunderstand_en.html')
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
