@@ -1,0 +1,7 @@
+{% extends "hist_1.html" %}
+{% block content %}
+<center><img src="/static/img/room.jpg" width="400"></center>
+<center><h3>Вы сидите в тёмной комнате, ничего не видно.</h3></center>
+<center><a href="{{ url_for('first_story_room_switchon') }}" class="btn btn-success">Включить свет</a></center>
+<center><a href="{{ url_for('first_story_room_switchoff') }}" class="btn btn-danger">Не включать свет</a></center>
+{% endblock %}

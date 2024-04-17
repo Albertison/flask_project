@@ -11,10 +11,10 @@ app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 
 
 class LoginForm(FlaskForm):
-    username = StringField('Логин', validators=[DataRequired()])
-    password = PasswordField('Пароль', validators=[DataRequired()])
-    email = StringField('Почта', validators=[DataRequired()])
-    submit = SubmitField('Войти')
+    username = StringField('Login', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    email = StringField('Email', validators=[DataRequired()])
+    submit = SubmitField('Entrance')
 
 
 client = MongoClient(
@@ -136,9 +136,19 @@ def dontunderstand_en():
     return render_template('dontunderstand_en.html')
 
 
-@app.route('/game/first_story')
-def first_story():
-    return render_template('first_story.html')
+@app.route('/game/first_story/room')
+def first_story_room():
+    return render_template('first_story_room.html')
+
+
+@app.route('/game/first_story/room/switchon')
+def first_story_room_switchon():
+    return render_template('first_story_room_switchon.html')
+
+
+@app.route('/game/first_story/room/switchoff')
+def first_story_room_switchoff():
+    return render_template('first_story_room_switchoff.html')
 
 
 if __name__ == '__main__':

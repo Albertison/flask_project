@@ -30,7 +30,7 @@
 
         <div class="col-md-3 text-end">
             <button type="button" class="btn btn-outline-primary me-2">Sign in</button>
-            <a class="btn btn-info" role="button">Registration</a>
+            <a href="{{ url_for('login') }}" class="btn btn-outline-primary">Registration</a>
         </div>
     </header>
     {% block content %}{% endblock %}
