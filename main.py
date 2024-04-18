@@ -125,7 +125,3 @@ def first_story_room_lier():
 @app.route('/game/nojnoi_dozor_prolog_1')
 def nojnoi_dozor_prolog():
     return render_template('nojnoi_dozor_prolog_1.html')
-
-
-if __name__ == '__main__':
-    app.run(port=8080, host='127.0.0.1')
