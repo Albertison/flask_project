@@ -160,5 +160,11 @@ def first_story_room_truth():
 def first_story_room_lier():
     return render_template('first_story_room_lier.html')
 
+
+@app.route('/game/nojnoi_dozor_prolog_1')
+def nojnoi_dozor_prolog():
+    return render_template('nojnoi_dozor_prolog_1.html')
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
