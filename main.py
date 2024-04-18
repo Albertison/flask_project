@@ -17,6 +17,16 @@ def login():
             return render_template('str.html')
 
 
+@app.route('/enter', methods=['GET', 'POST'])
+def enter():
+    if request.method == 'GET':
+        return render_template('enter.html', title='Начало')
+    elif request.method == 'POST':
+        if database.user_exists(request.form['text']):
+            if database.check_password(request.form['text'], request.form['password']):
+                return render_template('str.html')
+
+
 @app.route("/")
 def mainium():
     return render_template('first_page.html', title='Начало')
