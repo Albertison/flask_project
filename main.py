@@ -1,24 +1,20 @@
 from flask import Flask, request
 from flask import render_template, redirect
-from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField
-from wtforms.validators import DataRequired
-from pymongo import MongoClient
-from werkzeug.security import generate_password_hash, check_password_hash
+from database import database
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 
 
 @app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'GET':
         return render_template('login.html', title='Начало')
     elif request.method == 'POST':
-        print(request.form['email'])
-        print(request.form['password'])
-        print(request.form['text'])
-        return "Форма отправлена"
+        if not database.user_exists(request.form['text']):
+            database.add_user(request.form['text'], request.form['password'], request.form['email'])
+            return render_template('str.html')
 
 
 @app.route("/")
