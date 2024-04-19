@@ -14,6 +14,7 @@ def login():
         if not database.user_exists(request.form['text']):
             database.add_user(request.form['text'], request.form['password'], request.form['email'])
             return render_template('str.html')
+        return render_template('oshibka1.html')
 
 
 @app.route('/enter', methods=['GET', 'POST'])
@@ -24,6 +25,8 @@ def enter():
         if database.user_exists(request.form['text']):
             if database.check_password(request.form['text'], request.form['password']):
                 return render_template('str2.html')
+            return render_template('oshibka2.html')
+        return render_template('oshibka3.html')
 
 
 @app.route("/")
@@ -51,6 +54,11 @@ def about_us2():
     return render_template("about_us2.html", title='Про нас')
 
 
+@app.route("/about_us3")
+def about_us3():
+    return render_template("about_us3.html", title='Про нас')
+
+
 @app.route('/game')
 def game():
     return render_template("game.html", title="Начало игры")
@@ -64,6 +72,11 @@ def obnovlenia():
 @app.route('/obnovlenia2')
 def obnovlenia2():
     return render_template('obnovlenia2.html', title='Обновления')
+
+
+@app.route('/obnovlenia3')
+def obnovlenia3():
+    return render_template('obnovlenia3.html', title='Обновления')
 
 
 @app.route('/game/rules')
