@@ -1,4 +1,43 @@
 {% extends "hist_1.html" %}
 {% block content %}
-<h1>Привет</h1>
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/img/mal.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/img/poliz.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/img/devush.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/img/shaurma.jpg" class="d-block w-100">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<h4>Я иду по старой станции метро. Вонь и слякость здешнего места не давало мне покоя. Будто чужой взгляд просто
+    сосредоточен на мне. Однако на станции никого, кроме полицейского, патрулировавшего ночной город, и женщины, не
+    было. Странно. Впереди меня стоял ларёк, где продавалась самая, пожалуй, лучшая шаурма.</h4>
+
 {% endblock %}
