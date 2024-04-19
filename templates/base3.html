@@ -21,14 +21,13 @@
         </div>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <h5><a href="{{ url_for('mainium') }}" class="nav-link px-2 link-secondary">Домашняя</a></h5>
-            <h5><a href="{{ url_for('about_us') }}" class="nav-link px-2">Про нас</a></h5>
-            <h5><a href="{{ url_for('obnovlenia') }}" class="nav-link px-2">Обновления</a></h5>
+            <h5><a href="{{ url_for('mainium3') }}" class="nav-link px-2 link-secondary">Домашняя</a></h5>
+            <h5><a href="{{ url_for('about_us3') }}" class="nav-link px-2">Про нас</a></h5>
+            <h5><a href="{{ url_for('obnovlenia3') }}" class="nav-link px-2">Обновления</a></h5>
         </ul>
 
         <div class="col-md-3 text-end">
-            <a href="{{ url_for('enter') }}" class="btn btn-outline-primary">Вход</a>
-            <a href="{{ url_for('login') }}" class="btn btn-outline-primary">Регистрация</a>
+            <a href="{{ url_for('mainium') }}" class="btn btn-outline-primary">Выход</a>
         </div>
     </header>
     {% block content %}{% endblock %}

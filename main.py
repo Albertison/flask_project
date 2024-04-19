@@ -36,14 +36,9 @@ def mainium2():
     return render_template('first_page2.html', title='Начало')
 
 
-@app.route('/en')
-def mainium_en():
-    return render_template('first_page_en.html', title='Beginning')
-
-
-@app.route('/en2')
-def mainium_en2():
-    return render_template('first_page_en2.html', title='Beginning')
+@app.route("/rew")
+def mainium3():
+    return render_template('first_page3.html', title='Наало')
 
 
 @app.route("/about_us")
@@ -56,19 +51,9 @@ def about_us2():
     return render_template("about_us2.html", title='Про нас')
 
 
-@app.route("/about_us_en")
-def about_us_en():
-    return render_template("about_us_en.html", title='About us')
-
-
 @app.route('/game')
 def game():
     return render_template("game.html", title="Начало игры")
-
-
-@app.route('/game_en')
-def game_en():
-    return render_template("game_en.html", title="Начало игры")
 
 
 @app.route('/obnovlenia')
@@ -81,29 +66,14 @@ def obnovlenia2():
     return render_template('obnovlenia2.html', title='Обновления')
 
 
-@app.route('/obnovlenia_en')
-def obnovlenia_en():
-    return render_template('obnovlenia_en.html', title='Updates')
-
-
 @app.route('/game/rules')
 def mrorii_1():
     return render_template('mrorii_1.html', title="Мрорий")
 
 
-@app.route('/game_en/rules')
-def mrorii_1_en():
-    return render_template('mrorii_1_en.html', title="Mrorii")
-
-
 @app.route('/game/rules/1')
 def hist_1():
     return render_template('hist_1_1.html')
-
-
-@app.route('/game_en/rules/1')
-def hist_1_en():
-    return render_template('hist_1_1_en.html')
 
 
 @app.route('/game/rules/dontunderstand')
@@ -114,16 +84,6 @@ def dontunderstand():
 @app.route('/game/rules/understand')
 def understand():
     return render_template('understand.html')
-
-
-@app.route('/game/rules/understand_en')
-def understand_en():
-    return render_template('understand_en.html')
-
-
-@app.route('/game/rules/dontunderstand_en')
-def dontunderstand_en():
-    return render_template('dontunderstand_en.html')
 
 
 @app.route('/game/first_story/room')
