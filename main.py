@@ -1,5 +1,5 @@
 from flask import Flask, request
-from flask import render_template, redirect
+from flask import render_template
 from database import database
 
 app = Flask(__name__)
@@ -23,7 +23,7 @@ def enter():
     elif request.method == 'POST':
         if database.user_exists(request.form['text']):
             if database.check_password(request.form['text'], request.form['password']):
-                return render_template('str.html')
+                return render_template('str2.html')
 
 
 @app.route("/")
@@ -31,14 +31,29 @@ def mainium():
     return render_template('first_page.html', title='Начало')
 
 
+@app.route("/er")
+def mainium2():
+    return render_template('first_page2.html', title='Начало')
+
+
 @app.route('/en')
 def mainium_en():
     return render_template('first_page_en.html', title='Beginning')
 
 
+@app.route('/en2')
+def mainium_en2():
+    return render_template('first_page_en2.html', title='Beginning')
+
+
 @app.route("/about_us")
 def about_us():
     return render_template("about_us.html", title='Про нас')
+
+
+@app.route("/about_us2")
+def about_us2():
+    return render_template("about_us2.html", title='Про нас')
 
 
 @app.route("/about_us_en")
@@ -59,6 +74,11 @@ def game_en():
 @app.route('/obnovlenia')
 def obnovlenia():
     return render_template('obnovlenia.html', title='Обновления')
+
+
+@app.route('/obnovlenia2')
+def obnovlenia2():
+    return render_template('obnovlenia2.html', title='Обновления')
 
 
 @app.route('/obnovlenia_en')
