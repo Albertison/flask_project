@@ -132,3 +132,18 @@ def nojnoi_dozor_prolog():
 @app.route('/game/nojnoi_dozor_prolog_2_gohome')
 def nojnoi_dozor_prolog_2_gohome():
     return render_template('nojnoi_dozor_prolog_2_gohome.html')
+
+
+@app.route('/game/go_to_home')
+def go_to_home():
+    return render_template('go_to_home.html')
+
+
+@app.route('/game/minecraft')
+def minecraft():
+    return render_template('minecraft.html')
+
+
+@app.route('/game/sell_home')
+def sell_home():
+    return render_template('sell_home.html')
